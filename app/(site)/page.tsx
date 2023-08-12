@@ -26,6 +26,15 @@ export default function Home() {
           </div>
         </div>
       </Header>
+      <div className="mt-2 mb-7 px-6">
+        <div className="flex justify-between items-center">
+          <h1 className="text-white text-2xl font-semibold">Newest Songs</h1>
+        </div>
+        <div>
+          {/* 曲を流し込んだカードコンポーネントをリスト形式で整列させる予定 */}
+          List of Songs!
+        </div>
+      </div>
     </div>
   );
 }
