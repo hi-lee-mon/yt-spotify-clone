@@ -28,6 +28,10 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           className,
         )}
         disabled={disabled}
+        // なんでrefを渡しているのだろうか？
+        // おそらく共通のコンポーネントとしては基本的にデフォルトの挙動はできるようにしておきたいからっぽい？
+        // とりあえずおまじない的に渡すでよいかも。あとでref渡したくなった時に困るから。
+        // 実際、今の実装ではref使っていない。
         ref={ref}
         {...props}
       >
